@@ -13,7 +13,7 @@ function createCalculator() {
           this.clear();
           return;
         }
-        this.display.value = String(conta.toFixed(2));
+        this.display.value = String(conta);
       } catch (element) {
         alert('Conta Inválida');
         this.clear();
