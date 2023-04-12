@@ -63,10 +63,13 @@ function createCalculator() {
         if (element.classList.contains('btn-delete')) {
           this.eraseOne();
         }
-        if (element.classList.contains('btn-equal') && this.display.value == ' ') {
-            return alert('Não clique aqui sem digitar nada :)')
-        } else if(element.classList.contains('btn-equal')){
-            this.doExpression();
+        if (
+          element.classList.contains('btn-equal') &&
+          this.display.value == ' '
+        ) {
+          return alert('Não clique aqui sem digitar nada :)');
+        } else if (element.classList.contains('btn-equal')) {
+          this.doExpression();
         }
       });
     },
