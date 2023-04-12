@@ -73,3 +73,8 @@ form input:focus{
 .btn-dif{
     background-color: #978e8e;
 }
+@media(min-width:350px) and (max-width:650px){
+    .btn{
+        height: 100%;
+    }
+}
