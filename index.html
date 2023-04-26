@@ -13,7 +13,7 @@
       <h1>Calculadora</h1>
       <table class="calculator">
         <tr>
-          <td colspan="4"><input type="text" class="display" /></td>
+          <td colspan="4"><input type="text" class="display"autofocus oninput="value = value.replace(/[^0-9.+-/'*'()']/g, '')"  /></td>
         </tr>
 
         <tr>

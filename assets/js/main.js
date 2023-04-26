@@ -31,7 +31,7 @@ function createCalculator() {
       this.clickButtons();
       this.pressEnter();
       this.pressDel();
-      this.numberPad()
+      
     },
     pressEnter() {
       this.display.addEventListener('keyup', (event) => {
@@ -49,45 +49,6 @@ function createCalculator() {
           this.eraseOne();
         }
       });
-    },
-    numberPad(){
-      document.addEventListener('keypress',evento =>{
-        if(evento.keyCode === 48){
-          this.display.value += 0
-        }else if(evento.keyCode === 49){
-          this.display.value += 1
-        }else if(evento.keyCode === 50){
-          this.display.value += 2
-        }else if(evento.keyCode === 51){
-          this.display.value += 3
-        }else if(evento.keyCode === 52){
-          this.display.value += 4
-        }else if(evento.keyCode === 53){
-          this.display.value += 5
-        }else if(evento.keyCode === 54){
-          this.display.value += 6
-        }else if(evento.keyCode === 55){
-          this.display.value += 7
-        }else if(evento.keyCode === 56){
-          this.display.value += 8
-        }else if(evento.keyCode === 57){
-          this.display.value += 9
-        }else if(evento.keyCode === 43){
-          this.display.value += '+'
-        }else if(evento.keyCode === 45){
-          this.display.value += '-'
-        }else if(evento.keyCode === 42){
-          this.display.value += '*'
-        }else if(evento.keyCode === 13){
-          this.doExpression()
-        }else if(evento.keyCode === 47){
-          this.display.value += '/'
-        }else if(evento.keyCode === 46){
-          this.display.value += '.'
-        }else if(evento.keyCode === 44){
-          this.display.value += '.'
-        }
-      })
     },
 
     clickButtons() {
@@ -113,10 +74,7 @@ function createCalculator() {
         }
       });
       
-      document.addEventListener('keydown',(evento)=>{
-        if(evento.keyCode === 8) this.eraseOne()
-
-      })
+      
       
     },
     btnStopDisplay(valor) {
